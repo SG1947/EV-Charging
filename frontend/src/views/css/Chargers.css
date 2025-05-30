@@ -1,0 +1,117 @@
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Container */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+}/* Filter Container */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #f0f2f5;
+  padding: 1rem 2rem;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.filters-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.filters-container select,
+.filters-container input[type="number"] {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+  min-width: 140px;
+}
+
+/* Grid for Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  background-color: #dfeffb;
+  border-radius: 25px;
+  width: 75rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+/* Individual Station Card */
+.station-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 12px rgba(38, 22, 22, 0.448);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.station-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(39, 17, 163, 0.608);
+}
+
+.station-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.station-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card-actions button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card-actions button:first-of-type {
+  background-color: #3498db;
+  color: white;
+}
+
+.card-actions button:last-of-type {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.card-actions button:hover {
+  opacity: 0.9;
+}
