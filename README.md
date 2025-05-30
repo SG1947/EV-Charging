@@ -40,7 +40,7 @@ The app is built with Vue 3 and powered by a Node.js/Express backend.
 ### 🔧 Local Development
 
 #### 1. Clone the Repository
-git clone https://github.com/your-username/ev-charging-map.git
+git clone https://github.com/SG1947/EV-Charging.git
 cd ev-charging-map
 cd backend
 npm install
