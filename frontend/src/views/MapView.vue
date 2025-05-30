@@ -9,7 +9,20 @@
 import { onMounted } from 'vue';
 import L from 'leaflet';
 import api from '../api/http';
+import 'leaflet/dist/leaflet.css'; // This is often missed
 
+// Import the marker icon images
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+// Fix Leaflet’s broken default icon paths
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 onMounted(async () => {
   const { data } = await api.get('/stations');
 
