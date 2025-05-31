@@ -26,8 +26,41 @@ The app is built with Vue 3 and powered by a Node.js/Express backend.
 - MongoDB 
 - JWT for auth 
 
-### Deployment:
-- Render.com (both client and server)
+Here’s a sample `README.md` section you can use to describe how your **EV Charging** site works:
+
+---
+
+## 🌐 How the EV Charging Site Works
+
+### 🚀 Accessing the Site
+
+* **Live Link**: When you open the live site, it will automatically redirect you to the `/chargers` page.
+* **Chargers Page**:
+
+  * You'll see a list of all available EV chargers along with their details.
+  * There's also an integrated **map view** that visually displays the charger locations for easier navigation.
+
+### 🔐 Authentication & User Features
+
+* **Navigation Bar**:
+
+  * You'll find a **Login** option in the navbar.
+  * On the **Login Page**, new users can also **register** for an account.
+
+* **After Login**:
+
+  * Logged-in users can:
+
+    * **Add a new charger**
+    * **Edit existing chargers**
+    * **Delete chargers**
+  * These features are **auth-protected**, meaning only authenticated users have access to manage charger data.
+
+### ⏳ Please Note
+
+* The page might take a few moments to load because the **backend is deployed separately** from the frontend. Thank you for your patience!
+
+
 
 ## ⚙️ Setup Instructions
 
